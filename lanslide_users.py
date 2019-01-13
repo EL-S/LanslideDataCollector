@@ -73,10 +73,7 @@ for user in users:
     page_links.append(url)
     data = [pos,username,name,firstname,status]
     all_user_data.append(data)
-    #url = "https://gender-api.com/get?name={}&key=DZbBvnSAYeSEHPcWHJ".format(firstname)
-    #res = requests.get(url).text
-    #json_file = json.loads(res)
-    #gender = json_file['gender']
+    print("{0} ({1}): {2} ({3}) - {4}".format(counter,pos,username,name,status))
            
 get_pages(page_links)
 print(all_user_data)
