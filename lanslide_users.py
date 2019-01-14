@@ -76,5 +76,3 @@ for user in users:
     print("{0} ({1}): {2} ({3}) - {4}".format(counter,pos,username,name,status))
            
 get_pages(page_links)
-print(all_user_data)
-
